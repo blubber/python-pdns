@@ -1,0 +1,20 @@
+version: '3'
+services:
+    mysql:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: secret
+
+    pdns:
+        image: psitrax/powerdns
+        links:
+            - mysql
+        ports:
+            - "127.0.0.1:1053:53/udp"
+            - "127.0.0.1:8081:8081"
+        environment:
+            MYSQL_HOST: mysql
+            MYSQL_USER: root
+            MYSQL_PASS: secret
+            MYSQL_DB: pdns
+        command: "--api=yes --api-key=secret --webserver-address=0.0.0.0 --webserver-allow-from=0.0.0.0/0"

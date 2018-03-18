@@ -1,0 +1,19 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+python-apiobject = {git = "https://github.com/blubber/python-apiobject.git"}
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.6"

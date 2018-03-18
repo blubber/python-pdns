@@ -1,0 +1,24 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "a5ed660f1ded8498335cce49c8d30b1fffb18c907b0a28208ed9beb9cbd49f9c"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "python-apiobject": {
+            "git": "https://github.com/blubber/python-apiobject.git"
+        }
+    },
+    "develop": {}
+}
